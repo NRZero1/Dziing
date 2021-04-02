@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /dziing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-D
+RewriteRule ^(.*)$ index.php/$1 [L]
